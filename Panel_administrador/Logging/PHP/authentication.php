@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entry</title>
 </head>
 <body>
     <?php      
@@ -23,13 +23,12 @@
             $count = mysqli_num_rows($result);  
             
             if($count == 1){  
-                echo "<h1><center> Login successful </center></h1>";
-                echo "<button>Access to the Panel.</button>"  
+                echo "<center><h1>Login successful</h1></center>";
+                echo "<center><a href='http://localhost/Trabajo_final_curso/Panel_administrador/Panel/index.html'><button>Access to the Panel.</button></a></center>";
             }  
             else{  
-                echo "<h1> Login failed. Invalid username or password.</h1>";  
+                echo "<h1> Login failed. Invalid username or password, consult with administrator.</h1>";  
             }     
     ?>
 </body>
 </html>
-

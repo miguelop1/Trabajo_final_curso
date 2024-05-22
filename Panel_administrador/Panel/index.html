@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de administración</title>
+</head>
+<body>
+    <form name="Working" action="PHP/mysql_update.php" method="POST">
+        <div class="admin-panel">
+            <h1>Admin Panel</h1>
+            
+            <div id="configuration">
+                <h2>Configuration</h2>
+                <div>
+                    <label>Gmail to receive:</label>
+                    <input type="email" name="gmailToReceive" id="gmailToReceive" />
+                </div>
+                <br>
+                <div>
+                    <label>Text to receive:</label>
+                    <input type="text" name="textToReceive" id="textToReceive" />
+                </div>
+                <div>
+                    <label>Server name:</label>
+                    <input type="text" name="serverName" id="serverName" />
+                </div>
+                <div>
+                    <label>Trigger for activation:</label>
+                    <input type="text" name="triggerForActivation" id="triggerForActivation" />
+                </div>
+                <div>
+                    <button type="submit" id="UploadInfo">Submit information</button>
+                </div>
+                <i>Important: Using this more than once will add more triggers. Deletion of triggers and alterations coming up next update.</i>
+            </div>
+
+<!-- Coming next update: 
+<div id="personalization">
+                <h2>Personalization</h2>
+                <div id="backgroundColorSelector">
+                    <button id="changeColorButton" onclick="colorchange()">Change Background Color</button>
+                    <select id="backgroundColorOptions">
+                        <option value="white">White</option>
+                        <option value="black">Black</option>
+                        <option value="cyan">Cyan</option>
+                    </select>
+                </div>
+            </div>
+        </div> -->
+</body>
+</html>
